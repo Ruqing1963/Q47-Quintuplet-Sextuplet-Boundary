@@ -1,0 +1,6 @@
+transition,count_k,count_k_plus_1,ratio,source
+k1_to_k2,18121562,173351,104.5,pioneer_zone
+k2_to_k3,173351,1749,99.1,pioneer_zone
+k3_to_k4,1749,15,116.6,pioneer_zone
+k4_to_k5,742,7,106.0,full_range
+k5_to_k6,7,0.047,~125,BH_predicted

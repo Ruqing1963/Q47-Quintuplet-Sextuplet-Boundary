@@ -1,0 +1,8 @@
+sieve_bound,S4,S5,S6,S4_rootfree,note
+100,3389,27350,221400,3389,pre-resonance
+282,3601,30840,268800,3601,just before first cliff
+283,2026,14980,115500,3614,first cliff (p=283)
+1000,3817,34274,313870,8604,recovery
+5000,5694,51345,471222,,continuing convergence
+10000,6392,57173,520348,,near-converged
+calibrated,6385,57108,519756,,empirical calibration

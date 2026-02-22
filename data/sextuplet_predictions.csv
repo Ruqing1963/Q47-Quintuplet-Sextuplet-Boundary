@@ -1,0 +1,9 @@
+search_bound_N,E_C5,E_C6,interpretation
+2.00e+11,5.8,0.047,current
+1.00e+12,21.3,0.160,unlikely
+2.00e+12,37.3,0.273,24%
+5.00e+12,79.0,0.559,coin_flip
+1.05e+13,145.5,1.003,sextuplet_boundary
+2.00e+13,248.0,1.672,1-2_sextuplets
+5.00e+13,531.8,3.475,routine
+1.00e+14,949.8,6.066,septuplet?
