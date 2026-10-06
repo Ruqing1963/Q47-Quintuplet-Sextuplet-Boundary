@@ -1,0 +1,7 @@
+k,S_k,S_k_over_S_km1,method,bound
+1,8.68274,,L-function accelerated Euler product,1000000
+2,77.9427,8.97673,L-function accelerated Euler product,1000000
+3,721.895,9.26188,L-function accelerated Euler product,1000000
+4,6514.47,9.02413,L-function accelerated Euler product,1000000
+5,58549.8,8.98764,L-function accelerated Euler product,1000000
+6,535502,9.14610,L-function accelerated Euler product,1000000

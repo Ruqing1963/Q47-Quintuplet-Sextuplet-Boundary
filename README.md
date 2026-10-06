@@ -6,6 +6,39 @@
 
 ---
 
+> ## ⚠️ Version 2 (October 2026) — please read
+>
+> **Version 2 DOI: [10.5281/zenodo.23178170](https://doi.org/10.5281/zenodo.23178170)** · Version 1 DOI: [10.5281/zenodo.18728917](https://doi.org/10.5281/zenodo.18728917)
+>
+> A re-audit of Version 1 (Zenodo [10.5281/zenodo.18728917](https://zenodo.org/records/18728917))
+> found that Table 2 of the paper (partial singular series) was **not** the output of the
+> published script except at B = 10⁴, that the "root-free" comparison and the
+> "calibration factor 0.999 ⇒ converged" argument were invalid, that the quintuplet digit
+> counts were each one too small, and that the "constant suppression factor ≈ 127" claim is
+> wrong (the factor grows like 46 ln N / 9: ≈ 103 in the pioneer zone, ≈ 127 at 2×10¹¹).
+> The main conclusions survive. Version 2 evaluates the singular series **exactly** through
+> Dirichlet L-functions mod 47 and needs no calibration:
+>
+> | Quantity | v1 (calibrated) | **v2 (exact)** |
+> |:--|--:|--:|
+> | 𝔖₄ | 6,385 | **6,514** |
+> | 𝔖₅ | 57,108 | **58,550** |
+> | 𝔖₆ | 519,756 | **535,500** |
+> | E[C₅(2×10¹¹)] | 5.83 | **5.88** (observed 7) |
+> | E[C₆(2×10¹¹)] | 0.047 | **0.047** (observed 0) |
+> | Sextuplet boundary N* | 1.05×10¹³ | **1.03×10¹³** (601-digit primes) |
+> | Quintuplet digits | 487–519 | **488–520** |
+>
+> Parameter-free check against the pioneer zone: predicted 18,464,404 primes vs 18,473,571
+> observed (+0.05 %), 176,778 vs 176,894 prime pairs (+0.07 %).
+>
+> **Files:** `paper/Q47_Quintuplet_Boundary_v2.tex/.pdf`, `scripts/*_v2.py`, `figures/v2/`,
+> `data/*_v2.csv`, `data/singular_series_exact.csv`. Full list of changes: [`CHANGELOG_v2.md`](CHANGELOG_v2.md).
+> The Version 1 files are kept unchanged below for the record; the numbers in the remainder of
+> this README describe Version 1.
+
+---
+
 ## Summary
 
 Among the 742 prime quadruplets for Q(n) = n⁴⁷ − (n−1)⁴⁷ discovered over
@@ -125,13 +158,18 @@ pdflatex Q47_Quintuplet_Boundary.tex
 ## Citation
 
 ```bibtex
-@article{Chen2026c,
-  author  = {Chen, Ruqing},
-  title   = {Prime Quintuplets and the Sextuplet Boundary for
-             {$Q(n) = n^{47} - (n-1)^{47}$}},
-  year    = {2026},
-  note    = {Part {III} of the Titan Project},
-  url     = {https://github.com/Ruqing1963/Q47-Quintuplet-Sextuplet-Boundary}
+@misc{Chen2026c,
+  author    = {Chen, Ruqing},
+  title     = {Prime Quintuplets and the Sextuplet Boundary for
+               {$Q(n) = n^{47} - (n-1)^{47}$}: Extreme Prime Clusters
+               in a High-Degree Polynomial},
+  year      = {2026},
+  month     = oct,
+  version   = {2},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23178170},
+  note      = {Part {III} of the Titan Project. Version 1: doi:10.5281/zenodo.18728917},
+  url       = {https://github.com/Ruqing1963/Q47-Quintuplet-Sextuplet-Boundary}
 }
 ```
 
